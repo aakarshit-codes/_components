@@ -20,7 +20,19 @@
 					<a href="#" class="text-xl font-bold text-gray-800">MyLogo</a>
 				</div>
 
-				<!-- Navigation Links -->
+				<!-- Hamburger Icon -->
+				<div class="md:hidden">
+					<button id="menu-toggle" class="text-gray-700 focus:outline-none">
+						<svg class="w-6 h-6" fill="none" stroke="currentColor"
+							stroke-width="2" viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg">
+							<path stroke-linecap="round" stroke-linejoin="round"
+								d="M4 6h16M4 12h16M4 18h16" />
+						</svg>
+					</button>
+				</div>
+
+				<!-- Navigation Links (Desktop) -->
 				<div class="hidden md:flex space-x-6">
 					<a href="#" class="text-gray-600 hover:text-black transition">Home</a>
 					<a href="#"
@@ -31,24 +43,38 @@
 						class="text-gray-600 hover:text-black transition">Contact</a>
 				</div>
 
-				<!-- CTA Button -->
+				<!-- CTA Button (Desktop) -->
 				<div class="hidden md:block">
 					<a href="#"
 						class="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition">
 						Get Started
 					</a>
 				</div>
-
 			</div>
+
+			<!-- Mobile Menu -->
+			<div id="mobile-menu" class="md:hidden hidden flex-col space-y-2 mt-4">
+				<a href="#" class="block text-gray-600 hover:text-black">Home</a>
+				<a href="#" class="block text-gray-600 hover:text-black">About</a>
+				<a href="#" class="block text-gray-600 hover:text-black">Services</a>
+				<a href="#" class="block text-gray-600 hover:text-black">Contact</a>
+				<a href="#"
+					class="block px-4 py-2 bg-black text-white rounded-md w-max hover:bg-gray-800">
+					Get Started
+				</a>
+			</div>
+
 		</nav>
 	</header>
 
 	<!-- Test Content -->
 	<main class="p-8 text-center">
-		<p class="text-gray-700">Scroll down to test sticky navbar...</p>
+		<p class="text-gray-700">Scroll down to test Hamburger menu...</p>
 		<div class="h-[2000px]"></div>
 	</main>
 
+	<!-- Script -->
+	<script type="module" src="./navbar.js"></script>
 </body>
 
 </html>
