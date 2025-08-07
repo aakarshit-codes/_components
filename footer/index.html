@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Footer Component</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+  <!-- Page content (just to push footer down) -->
+  <main class="flex-grow">
+    <div class="p-8 text-center text-gray-600">Scroll down to see the footer.
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t">
+    <div
+      class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+
+      <!-- Left: Copy -->
+      <p class="text-sm text-gray-500">&copy; 2025 Aakarshit. All rights
+        reserved.</p>
+
+      <!-- Middle: Links -->
+      <div class="flex space-x-4 text-sm text-gray-600">
+        <a href="#" class="hover:text-black">About</a>
+        <a href="#" class="hover:text-black">Contact</a>
+        <a href="#" class="hover:text-black">Terms</a>
+      </div>
+
+      <!-- Right: Signup -->
+      <form class="flex space-x-2">
+        <input type="email" placeholder="Subscribe"
+          class="px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-black"
+          required />
+        <button type="submit"
+          class="px-4 py-2 bg-black text-white text-sm rounded-md hover:bg-gray-800 transition">
+          Sign Up
+        </button>
+      </form>
+
+    </div>
+  </footer>
+
+  <script type="module" src="./footer.js"></script>
+</body>
+
+</html>
